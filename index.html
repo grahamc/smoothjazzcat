@@ -83,7 +83,7 @@
             id: 'loop',
             // url: '/mp3s/nyan-looped.mp3',
             // url: 'http://s3.amazonaws.com/nyan.cat/nyan-looped.mp3',
-            url: 'http://api.ning.com:80/files/3zmSvhA*3jKxFJj1I5uh5dp5oCynyyMksQjwS3JWWQNlriTzDzX61KtlFnuQtx-hEmV7NdqVgofmZvh7cXOX-UVJ47m1SR4a/nyanlooped.mp3',
+            url: '/NyanCatJazz.mp3',
             autoLoad: true,
             autoPlay: true,
             loops: 9999999,
@@ -95,7 +95,7 @@
               // }
             },
             // VOLUME: 50
-            volume: 0
+            volume: 50
           });
         });
       //]]>
@@ -103,28 +103,7 @@
     <title>NON-STOP NYAN CAT!</title>
   </head>
   <body>
-    <h1 class='i18n' data-cat='NYAN GAT SENSE PARAR' data-en='NON-STOP NYAN CAT!' data-jp='おわらにゃーいニャン猫！' data-nyan='NYAN-NYAN NYAN NYAN!'>NON-STOP NYAN CAT!</h1>
-    <!-- .hint -->
-    <!-- New easter egg added 5/17! You gotta stay here for about 33 minutes though ^^ -->
-    <script type='text/javascript'>
-      //<![CDATA[
-        var tweetPrefix = {
-          en: "I HAVE NYANED FOR",
-          cat: "TINC NYAN PER",
-          nyan: "NYAN NYANED NYA",
-          jp: ""
-        }
-        var tweetSuffix = {
-          en: "SECONDS",
-          cat: "SEGON",
-          nyan: "NYANS",
-          jp: "秒ニャンした！"
-        }
-        var tweetPrefixActive = tweetPrefix.en;
-        var tweetSuffixActive = tweetSuffix.en;
-        var lang = "en";
-      //]]>
-    </script>
+    <h1 class='i18n' data-cat='NYAN GAT SENSE PARAR' data-en='NON-STOP NYAN CAT!' data-jp='おわらにゃーいニャン猫！' data-nyan='NYAN-NYAN NYAN NYAN!'>NON-STOP SMOOTH JAZZ CAT!</h1>
     <div class='rainbows'>
       <div class='wrapper'>
         <div class='rainbow frame-1'>
@@ -982,81 +961,29 @@
         <span class='seconds'>0</span>
         <span class='i18n' data-cat='segon' data-en='seconds' data-jp='秒' data-nyan='NYANS'>seconds</span>
       </div>
-      <div class='tweet-score i18n' data-cat='Tweeteja la teva puntuació' data-en='Tweet Your Score' data-jp='スコアをツイッターでつばやく' data-nyan='NYAN NYA NYAN'>
-        Tweet Your Score
-      </div>
-      <div class='disclaimer i18n' data-cat='No et preocupis, això obre una finestra nova ^^' data-en="Don't worry, this opens a new window ^^" data-jp='新しいウインドウに開くので安心してください :3' data-nyan='NYA NYAN, NYAN NYAN NYA NYA NYAN ^^'>
-        Don't worry, this opens a new window ^^
-      </div>
-      <div class='follow i18n' data-cat='Seguir @nyannyancat' data-en='Follow @nyannyancat' data-jp='@nyannyancat をフォロー' data-nyan='NYAN @nyannyancat'>
-        Follow @nyannyancat
-      </div>
-      <script type='text/javascript'>
-        //<![CDATA[
-          $(function(){
-            $(".tweet-score").click(function() {
-              href = "http://twitter.com/share?_=1303084972176&count=horizontal&text=" + encodeURIComponent(tweetPrefixActive) + "%20" + seconds + "%20" + encodeURIComponent(tweetSuffixActive) + "!&url=http%3A%2F%2Fnyan.cat&via=nyannyancat"
-              window.open(href, '_blank')
-              _gaq.push(['_trackEvent', 'Click off', 'Tweet Score', seconds]);
-            })
-            $(".follow").click(function() {
-              href = "http://twitter.com/nyannyancat"
-              window.open(href, '_blank')
-              _gaq.push(['_trackEvent', 'Click off', 'Follow @nyannyancat', seconds]);
-            })
-            if($.browser.SafariMobile){
-              $(".i18n-pane").hide();
-              $("#timer").css("font-size","40em").append("<div id='play'>I WANT NYAN<span>(click me)</span></div>")
-              $("#play").click(function() {
-                soundManager.play('loop', { onfinish: function() {
-                  soundManager.play('loop')
-                }})
-                $(this).fadeOut();
-              })
-            }
-          })
-        //]]>
-      </script>
+
     </div>
     <div class='bottom-pane'>
       <div style='display: block'>
-        <div id='twitter-share-button-wrapper'>
-          <div id='twitter-share-button'>
-            <a class='twitter-share-button' data-count='horizontal' data-text='' data-url='http://nyan.cat' data-via='nyannyancat' href='http://twitter.com/share'>&nbsp;</a>
-            <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-          </div>
-        </div>
-        <div id='facebook-share-button'>
-          <iframe allowTransparency='true' frameborder='0' scrolling='no' src='http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fnyan.cat%2F%3Ff%3D1&amp;layout=button_count&amp;show_faces=false&amp;width=110&amp;action=like&amp;font=lucida+grande&amp;colorscheme=light&amp;height=21' style='border:none; overflow:hidden; width:110px; height:22px;'></iframe>
-        </div>
       </div>
       <div id='attribution'>
-        <a class='i18n open-attribution' data-cat='sobre' data-en='About' data-jp='について' data-nyan='NYAN' href='#'>About</a>
+        <a class='i18n open-attribution'data-en='About'href='#'>About</a>
         <div class='breakout'>
-          <span class='i18n' data-cat='Per' data-en='Site by' data-jp='By' data-nyan='NYAN'>Site by</span>
+          <span class='i18n' data-cat='Per' data-en='Site by' data-jp='By' data-nyan='NYAN'>Original site by</span>
           <a href='http://twitter.com/huy' onclick="_gaq.push(['_trackEvent', 'Click off', '@huy']);" target='_blank'>@huy</a>
           .
-          <a class='i18n' data-cat='Vídeo Original' data-en='Original Video' data-jp='原作映像' data-nyan='NYAN NYAN' href='http://www.youtube.com/watch?v=QH2-TGUlwu4' onclick="_gaq.push(['_trackEvent', 'Click off', 'Original Video']);" target='_blank'>Original Video</a>
+          <a href='http://www.youtube.com/watch?v=AaEmCFiNqP0' target='_blank'>Original Nyan-Cat Video</a>
+          .
+            <a href='http://www.youtube.com/watch?v=QH2-TGUlwu4' onclick="_gaq.push(['_trackEvent', 'Click off', 'Original Video']);" target='_blank'>Smooth Jazz Cover Video</a>
           .
           <a class='i18n' data-cat='GIF Original' data-en='Original GIF' data-jp='原作GIF' data-nyan='NYAN NYAN' href='http://www.prguitarman.com/index.php?id=348' onclick="_gaq.push(['_trackEvent', 'Click off', 'Original GIF']);" target='_blank'>Original GIF</a>
-          .
-          <a class='i18n' data-cat='Samarretes' data-en='Shirts' data-jp='Tシャツ' data-nyan='NYANS' href='http://www.poptartcat.com' onclick="_gaq.push(['_trackEvent', 'Click off', 'Shirts']);" target='_blank'>Shirts</a>
-          .
-          <a class='i18n' data-cat='Cançó Original' data-en='Original Song' data-jp='原曲' data-nyan='NYAN NYAN' href='http://www.nicomimi.net/play/sm13455867' onclick="_gaq.push(['_trackEvent', 'Click off', 'Original Song']);" target='_blank'>Original Song</a>
+            .
+            <a class='i18n' data-cat='Cançó Original' data-en='Original Song' data-jp='原曲' data-nyan='NYAN NYAN' href='http://www.nicomimi.net/play/sm13455867' onclick="_gaq.push(['_trackEvent', 'Click off', 'Original Song']);" target='_blank'>Original Song</a>
+              .
+              <a href='http://github.com/grahamc/smoothjazzcat' target='_blank'>Fork Me on GitHub</a>
         </div>
       </div>
     </div>
-    <div class='i18n23' data-cat='baixar el volum' data-en='lower the volume' data-jp='音量を下げる' data-nyan='NYAN NYAN NYAN' id='volume'>
-      lower the volume
-    </div>
-    <script type='text/javascript'>
-      //<![CDATA[
-        $("#twitter-share-button-wrapper").hover(function() {
-          $('#twitter-share-button').html("<a class='twitter-share-button' data-count='horizontal' data-text='" + tweetPrefixActive + " " + $("#timer .seconds").text() + " " + tweetSuffixActive + "!', data-url='http://nyan.cat' data-via='nyannyancat' href='http://twitter.com/share'>&nbsp;</a>")
-          $.getScript('http://platform.twitter.com/widgets.js');
-        })
-      //]]>
-    </script>
     <script type='text/javascript'>
       //<![CDATA[
         // STARS AND RAINBOW ANIMATIONS
@@ -1141,70 +1068,6 @@
             })
           }
         }
-      //]]>
-    </script>
-    <ul class='i18n-pane'>
-      <li class='i18n' data-cat='El Teu Idioma' data-en='Your Language' data-jp='言語設定' data-nyan='NYAN NYAN'>
-        Your Language
-      </li>
-      <li>
-        <a class='lang' href='javascript:void(0)' lang='en'>English</a>
-      </li>
-      <li>
-        (<a class='learn' href='http://www.catalanculture.com/' target='_blank'>Learn more!</a>)
-        <a class='lang' href='javascript:void(0)' lang='cat'>Catalan</a>
-      </li>
-      <li>
-        <a class='lang' href='javascript:void(0)' lang='nyan'>NYAN</a>
-      </li>
-      <li>
-        <a class='lang' href='javascript:void(0)' lang='jp'>Japanese</a>
-      </li>
-    </ul>
-    <script type='text/javascript'>
-      //<![CDATA[
-        $(".i18n-pane a.lang").click(function() {
-          lang = $(this).attr('lang');
-          _gaq.push(['_trackEvent', 'Language', lang]);
-          switch(lang) {
-            case "en":
-              tweetPrefixActive = tweetPrefix.en;
-              tweetSuffixActive = tweetSuffix.en;
-              break;
-            case "nyan":
-              tweetPrefixActive = tweetPrefix.nyan;
-              tweetSuffixActive = tweetSuffix.nyan;
-              break;
-            case "cat":
-              tweetPrefixActive = tweetPrefix.cat;
-              tweetSuffixActive = tweetSuffix.cat;
-              break;
-            case "jp":
-              tweetPrefixActive = tweetPrefix.jp;
-              tweetSuffixActive = tweetSuffix.jp;
-              break;
-          }
-          
-          $(".i18n").each(function() {
-            $(this).text($(this).attr("data-" + lang))
-          })
-        })
-        $(".i18n-pane .learn").click(function() {
-          _gaq.push(['_trackEvent', 'Click off', 'catalanculture.com']);
-        })
-      //]]>
-    </script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        var _gaq = _gaq || [];
-        _gaq.push(['_setAccount', 'UA-22720879-1']);
-        _gaq.push(['_trackPageview']);
-        
-        (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-        })();
       //]]>
     </script>
     <script type='text/javascript'>
